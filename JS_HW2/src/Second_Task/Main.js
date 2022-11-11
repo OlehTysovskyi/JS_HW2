@@ -7,9 +7,11 @@ let employeeSalaries = {
 };
 
 let Sum = 0, i = 1;
-for(let num in employeeSalaries){
+if(employeeSalaries != undefined) {
+	for(let num in employeeSalaries){
 	Sum += employeeSalaries[num];
 	console.log("-Salary " + i + " = [" + employeeSalaries[num] + "]");
+	}
 }
 
 console.log("-Salaries sum = [" + Sum + "]");
